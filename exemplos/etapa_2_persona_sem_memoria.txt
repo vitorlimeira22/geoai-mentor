@@ -1,0 +1,26 @@
+GeoAI Mentor — etapa 2: persona e cadeia, sem histórico
+
+Pergunta 1: Eu sou geofísico e quero migrar para a área de dados. Qual linguagem de programação devo aprender primeiro? Responda em até 150 palavras.
+
+Resposta 1:
+Como geofísico, a melhor linguagem para começar é **Python**. Ela combina:
+
+* **Facilidade de aprendizado** – sintaxe clara, ideal para quem vem de matemática e física.
+* **Ecossistema científico** – bibliotecas como **NumPy** (arrays e álgebra linear), **SciPy** (sinais, otimização), **Pandas** (manipulação de tabelas), **Matplotlib/Seaborn** (visualização) e **ObsPy** (dados sísmicos).
+* **Machine Learning e IA** – scikit‑learn, TensorFlow, PyTorch permitem construir modelos de classificação, regressão e redes neurais aplicados a dados sísmicos, gravimétricos ou de poços.
+* **Integração com GIS** – geopandas, rasterio, PyProj facilitam trabalhar com dados espaciais.
+
+Comece instalando o **Anaconda** (ou Miniconda) para gerenciar ambientes, e siga tutoriais introdutórios focados em análise de séries temporais e imagens geofísicas. Depois, explore notebooks Jupyter para experimentar rapidamente. Boa jornada!
+
+Pergunta 2: E que tipo de projeto de portfólio eu poderia criar usando essa linguagem? Responda em até 150 palavras.
+
+Resposta 2:
+Um ótimo projeto de portfólio em **Python** para quem vem de Geociências é um **pipeline de análise de dados sísmicos**:
+
+1. **Aquisição** – Use `obspy` para baixar dados sísmicos (ex.: estações do IRIS) ou ler arquivos SEG‑Y.
+2. **Pré‑processamento** – Aplique filtros (Butterworth, wavelet) e correlação cruzada com `scipy` e `numpy`.
+3. **Feature engineering** – Extraia atributos como amplitude RMS, frequência dominante, atributos de textura (GLCM) e atributos de velocidade (V<sub>P</sub>, V<sub>S</sub>) usando `pandas` e `scikit‑learn`.
+4. **Modelagem** – Treine um classificador (Random Forest ou Gradient Boosting) para identificar camadas geológicas ou detectar anomalias sísmicas.
+5. **Visualização** – Crie mapas 2D/3D interativos com `matplotlib`, `seaborn` e `plotly` para mostrar resultados e incertezas.
+
+Documente tudo em um notebook Jupyter, inclua o código‑fonte no GitHub e escreva um breve relatório que destaque como suas habilidades de física, matemática e interpretação de dados foram aplicadas.

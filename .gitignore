@@ -1,0 +1,9 @@
+# Ambiente virtual e arquivos gerados pelo Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Configurações locais que podem conter chaves
+.env
+.env.*
+!.env.example
